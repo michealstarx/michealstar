@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'star/css/blog_home.css' %}"/>
+    <link rel="stylesheet" href="{% static 'star/css/bootstrap.min.css' %}"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik+Glitch+Pop&display=swap" rel="stylesheet"/>
+
+    <title>STar: Blog</title>
+</head>
+<body>
+    <header>
+        <h1>Micheal STar Blog</h1>
+        <div class="img"><img src="{% static 'star/images/logo.jpg' %}" height="120px" width="120px" class="logo_img"/></div>
+    </header>
+    <div class="container">
+            {% for blog in blogs %}
+                <div class="cover">
+                    <br/>
+                    <div class="title">{{blog.title}}</div>
+                    <div class="time"><small>{{blog.date_created}}</small></div>
+                    <div class="blog_image"><img src="{{blog.image}}" height="190px" alt="{{blog.title}}"/></div>
+                    <p class="intro">{{blog.intro}}</p>
+                    <div class="link">
+                        <a href="{% url 'blog_details' blog.id %}" style="text-decoration: none; color: rgb(17, 160, 160);">continue ...</a>
+                    </div>
+                </div><br/>
+            {% endfor %}
+    </div>
+    <footer>
+        <a href="{% url 'home_page' %}" style="text-decoration: none;"><nav-btn>HOME</nav-btn></a>
+        <a href="{% url 'blog_home' %}" style="text-decoration: none;"><nav-btn class="selected">BLOG</nav-btn></a>
+    </footer>
+</body>
+</html>

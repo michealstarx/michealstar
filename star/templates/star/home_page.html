@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'star/css/home.css' %}"/>
+    <link rel="stylesheet" href="{% static 'star/css/bootstrap.min.css' %}"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik+Glitch+Pop&display=swap" rel="stylesheet"/>
+
+    <title>Micheal STar</title>
+</head>
+<body>
+    <header>
+        <h1>Micheal STar</h1>
+        <div class="img"><img src="{% static 'star/images/logo.jpg' %}" height="120px" width="120px" class="logo_img"/></div>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="introduction col-md-3">
+                <p class="bio">BIO</p>
+                <p>
+                    How would I describe myself? I love meeting new people and making new connections. I am focused, reserved, disciplined, 
+                    trustworthy, responsible and accountable.
+                    
+                </p>
+                <p>
+                    I began and completed my secondary education at Chimwemwe Secondary School. 
+                </p>
+                <p>
+                    I love soccer, working out, playing chess, coding, writing, solving math, cartoon development, taking pictures of nature
+                    and reading.
+                </p>
+                <p>
+                    I founded <a href="https://www.studystar.me"> STudy STar</a>  when I was 18 years old.
+                </p>
+            </div>
+            <div class="details col-md-8">
+                <p class="details_data">SKILLS</p>
+                <p>
+                    cto esse aliquam fugit suscipit hic ullam deserunt error quaerat labore maxime cum, adipisci autem tempore!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id consequuntur voluptas, facere quasi harum quo voluptatum esse, dolorum pariatur incidunt adipisci velit odit expedita voluptates ea corporis! Mollitia, assumenda recusandae?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto sunt tempore aspernatur atque perspiciatis nam, optio modi porro quisquam blanditiis velit veniam ducimus laudantium eum perferendis magnam impedit quam? Repudiandae.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis ex ab cum est atque repudiandae officia error eaque distinctio? Culpa itaque nobis vero, id sit iste pariatur ratione veritatis. Labore?
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur facilis tenetur adipisci quia aperiam explicabo suscipit, impedit, voluptatem quae sit perspiciatis dicta enim molestias pariatur, aspernatur odit veniam ipsa doloribus.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, molestias suscipit beatae repudiandae voluptate nemo enim, libero blanditiis officiis laborum, commodi natus esse quidem provident? Dolores maxime debitis blanditiis voluptatum.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore at explicabo necessitatibus harum nobis blanditiis aspernatur praesentium fugiat omnis iste, ea beatae eveniet veritatis facilis corporis labore soluta! Voluptatibus, officia.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quaerat magnam illum? Perferendis facere earum accusantium, quibusdam excepturi laborum facilis nam eos asperiores repellat architecto, temporibus at, illum voluptate dolores.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam porro doloribus magni. Vitae soluta id, unde amet autem perspiciatis qui error labore accusantium veniam possimus, molestias ratione nisi obcaecati voluptas.
+
+                </p>
+                <p class="details_data">CONTACT</p>
+                <div>
+                    <ul>
+                        <li>FaceBook</li>
+                        <li>Instagram</li>
+                        <li>LinkedIn</li>
+                        <li>TikTok</li>
+                        <li>WhatsApp</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="{% url 'home_page' %}" style="text-decoration: none;"><nav-btn class="selected">HOME</nav-btn></a>
+        <a href="{% url 'blog_home' %}" style="text-decoration: none;"><nav-btn>BLOG</nav-btn></a>
+    </footer>
+</body>
+</html>

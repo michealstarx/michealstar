@@ -1,0 +1,84 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'star/css/blog_details.css' %}"/>
+    <link rel="stylesheet" href="{% static 'star/css/bootstrap.min.css' %}"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik+Glitch+Pop&display=swap" rel="stylesheet"/>
+
+    <title>STar: {{blog.title}}</title>
+</head>
+<body>
+    <header>
+        <h1>Micheal STar Blog</h1>
+    </header>
+    <div class="full_blog container">
+        <div class="star">
+            <br/>
+            <div class="title">{{blog.title}}</div>
+            <div class="time"><small>{{blog.date_created}}</small></div>
+            <p class="blog_image"><img src="{{blog.image}}" height="190px" alt="{{blog.title}}"/></p>
+            <div class="intro">{{blog.intro}}</div>
+            <div class="boldi">{{blog.boldi}}</div>
+            <div class="paraf">{{blog.paraf}}</div>
+            <div class="paraf">{{blog.paraf1}}</div>
+            <div class="paraf">{{blog.paraf2}}</div>
+            <div class="paraf">{{blog.paraf3}}</div>
+            <div class="boldi">{{blog.boldi2}}</div>
+            <div class="paraf">{{blog.paraf4}}</div>
+            <div class="paraf">{{blog.paraf5}}</div>
+            <div class="paraf">{{blog.paraf6}}</div>
+            <div class="paraf">{{blog.paraf7}}</div>
+            <div class="boldi">{{blog.boldi3}}</div>
+            <div class="paraf">{{blog.paraf8}}</div>
+            <div class="paraf">{{blog.paraf9}}</div>
+            <div class="paraf">{{blog.paraf10}}</div>
+            <div class="paraf">{{blog.paraf11}}</div>
+            <div class="boldi">{{blog.boldi4}}</div>
+            <div class="paraf">{{blog.paraf12}}</div>
+            <div class="paraf">{{blog.paraf13}}</div>
+            <div class="paraf">{{blog.paraf14}}</div>
+            <div class="paraf">{{blog.paraf15}}</div>
+            {% if blog.image2 != null %}
+                <div class="blog_image">
+                    <img src="{{blog.image2}}" height="190px"/>
+                </div>
+            {% else %}
+                <div><br/></div>
+            {%endif%}
+            <div class="bolds">{{blog.bolds}}</div>
+            <div class="paras">{{blog.paras}}</div>
+            <div class="paras">{{blog.paras1}}</div>
+            <div class="paras">{{blog.paras2}}</div>
+            <div class="paras">{{blog.paras3}}</div>
+            <div class="bolds">{{blog.bolds2}}</div>
+            <div class="paras">{{blog.paras4}}</div>
+            <div class="paras">{{blog.paras5}}</div>
+            <div class="paras">{{blog.paras6}}</div>
+            <div class="paras">{{blog.paras7}}</div>
+            <div class="bolds">{{blog.bolds3}}</div>
+            <div class="paras">{{blog.paras8}}</div>
+            <div class="paras">{{blog.paras9}}</div>
+            <div class="paras">{{blog.paras10}}</div>
+            <div class="paras">{{blog.paras11}}</div>
+            <div class="bolds">{{blog.bolds4}}</div>
+            <div class="paras">{{blog.paras12}}</div>
+            <div class="paras">{{blog.paras13}}</div>
+            <div class="paras">{{blog.paras14}}</div>
+            <div class="paras">{{blog.paras15}}</div>
+
+        </div><br/>
+        <div class="message">
+            Message me through <a href="">Facebook</a> or <a href="">Instagram</a> or <a href="">WhatsApp</a>
+        </div><br/>
+    </div>
+    <footer>
+        <a href="{% url 'home_page' %}" style="text-decoration: none;"><nav-btn>HOME</nav-btn></a>
+        <a href="{% url 'blog_home' %}" style="text-decoration: none;"><nav-btn>BLOG</nav-btn></a>
+    </footer>
+</body>
+</html>
