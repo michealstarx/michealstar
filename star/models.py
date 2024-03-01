@@ -47,6 +47,7 @@ class Blog_post(models.Model):
     paras13 = models.TextField(blank=True, null=True)
     paras14 = models.TextField(blank=True, null=True)
     paras15 = models.TextField(blank=True, null=True)
+    outro = models.TextField(default="~ 🌟 KEEP TWINKLING 🌟 ~")
     
     
     def __str__(self):
