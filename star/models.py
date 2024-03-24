@@ -4,6 +4,7 @@ from django.utils import timezone
 class Blog_post(models.Model):
     title = models.CharField(max_length=300)
     date_created = models.DateTimeField()
+    category = models.CharField(max_length=250, default="Education")
     image = models.CharField(max_length=200, null=True)
     intro = models.TextField()
     boldi = models.TextField(blank=True, null=True)
