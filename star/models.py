@@ -57,3 +57,14 @@ class Blog_post(models.Model):
     
     class Meta:
         ordering = ['-date_created']
+        
+        
+class Comment(models.Model):
+    name = models.CharField(max_length=50)
+    comment = models.TextField()
+    
+    def __str__(self):
+        return self.name
+    
+    class Meta:
+        ordering = ['-id']

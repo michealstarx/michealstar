@@ -21,69 +21,99 @@
         <h1>Micheal STar Blog</h1>
     </header>
     <div class="full_blog container">
-        <div class="star">
-            <br/>
-            <div class="title">{{blog.title}}</div>
-            <div style="text-align: center;"><b>{{blog.category}}</b></div>
-            <div class="time"><small>{{blog.date_created}}</small></div>
-            <p class="blog_image"><img src="{{blog.image}}" height="190px" alt="{{blog.title}}"/></p>
-            <div class="intro">{{blog.intro}}</div>
-            <div class="boldi">{{blog.boldi}}</div>
-            <div class="paraf">{{blog.paraf}}</div>
-            <div class="paraf">{{blog.paraf1}}</div>
-            <div class="paraf">{{blog.paraf2}}</div>
-            <div class="paraf">{{blog.paraf3}}</div>
-            <div class="boldi">{{blog.boldi2}}</div>
-            <div class="paraf">{{blog.paraf4}}</div>
-            <div class="paraf">{{blog.paraf5}}</div>
-            <div class="paraf">{{blog.paraf6}}</div>
-            <div class="paraf">{{blog.paraf7}}</div>
-            <div class="boldi">{{blog.boldi3}}</div>
-            <div class="paraf">{{blog.paraf8}}</div>
-            <div class="paraf">{{blog.paraf9}}</div>
-            <div class="paraf">{{blog.paraf10}}</div>
-            <div class="paraf">{{blog.paraf11}}</div>
-            <div class="boldi">{{blog.boldi4}}</div>
-            <div class="paraf">{{blog.paraf12}}</div>
-            <div class="paraf">{{blog.paraf13}}</div>
-            <div class="paraf">{{blog.paraf14}}</div>
-            <div class="paraf">{{blog.paraf15}}</div>
-            {% if blog.image2 != null %}
-                <div class="blog_image">
-                    <img src="{{blog.image2}}" height="190px" alt="{{blog.title}}"/>
-                </div>
-            {% else %}
-                <div><br/></div>
-            {%endif%}
-            <div class="bolds">{{blog.bolds}}</div>
-            <div class="paras">{{blog.paras}}</div>
-            <div class="paras">{{blog.paras1}}</div>
-            <div class="paras">{{blog.paras2}}</div>
-            <div class="paras">{{blog.paras3}}</div>
-            <div class="bolds">{{blog.bolds2}}</div>
-            <div class="paras">{{blog.paras4}}</div>
-            <div class="paras">{{blog.paras5}}</div>
-            <div class="paras">{{blog.paras6}}</div>
-            <div class="paras">{{blog.paras7}}</div>
-            <div class="bolds">{{blog.bolds3}}</div>
-            <div class="paras">{{blog.paras8}}</div>
-            <div class="paras">{{blog.paras9}}</div>
-            <div class="paras">{{blog.paras10}}</div>
-            <div class="paras">{{blog.paras11}}</div>
-            <div class="bolds">{{blog.bolds4}}</div>
-            <div class="paras">{{blog.paras12}}</div>
-            <div class="paras">{{blog.paras13}}</div>
-            <div class="paras">{{blog.paras14}}</div>
-            <div class="paras">{{blog.paras15}}</div>
-            <p style="text-align: center; font-weight: bolder;"><b>{{blog.outro}}</b></p>
-
-        </div><br/>
-        <div class="message">
-            Message me through 
-            <a href="https://www.facebook.com/michealstarofficial">Facebook</a> or 
-            <a href="https://www.instagram.com/michealstarx">Instagram</a> or 
-            <a href="https://wa.me/260761781385">WhatsApp</a>
-        </div><br/>
+        <div class="row">
+            <div class="col-md-9">
+                <div class="star">
+                    <br/>
+                    <div class="title">{{blog.title}}</div>
+                    <div style="text-align: center;"><b>{{blog.category}}</b></div>
+                    <div class="time"><small>{{blog.date_created}}</small></div>
+                    <p class="blog_image"><img src="{{blog.image}}" height="190px" alt="{{blog.title}}"/></p>
+                    <div class="intro">{{ blog.intro | linebreaks }}</div>
+                    <div class="boldi">{{ blog.boldi | linebreaks }}</div>
+                    <div class="paraf">{{ blog.paraf | linebreaks }}</div>
+                    <div class="paraf">{{ blog.paraf1 | linebreaks }}</div>
+                    <div class="paraf">{{ blog.paraf2 | linebreaks }}</div>
+                    <div class="paraf">{{ blog.paraf3 | linebreaks }}</div>
+                    <div class="boldi">{{ blog.boldi2 | linebreaks }}</div>
+                    <div class="paraf">{{ blog.paraf4 | linebreaks }}</div>
+                    <div class="paraf">{{ blog.paraf5 | linebreaks }}</div>
+                    <div class="paraf">{{ blog.paraf6 | linebreaks }}</div>
+                    <div class="paraf">{{ blog.paraf7 | linebreaks }}</div>
+                    <div class="boldi">{{ blog.boldi3 | linebreaks }}</div>
+                    <div class="paraf">{{ blog.paraf8 | linebreaks }}</div>
+                    <div class="paraf">{{ blog.paraf9 | linebreaks }}</div>
+                    <div class="paraf">{{ blog.paraf10 | linebreaks }}</div>
+                    <div class="paraf">{{ blog.paraf11 | linebreaks }}</div>
+                    <div class="boldi">{{ blog.boldi4 | linebreaks }}</div>
+                    <div class="paraf">{{ blog.paraf12 | linebreaks }}</div>
+                    <div class="paraf">{{ blog.paraf13 | linebreaks }}</div>
+                    <div class="paraf">{{ blog.paraf14 | linebreaks }}</div>
+                    <div class="paraf">{{ blog.paraf15 | linebreaks }}</div>
+                    {% if blog.image2 != null %}
+                        <div class="blog_image">
+                            <img src="{{blog.image2}}" height="190px" alt="{{blog.title}}"/>
+                        </div>
+                    {% else %}
+                        <div><br/></div>
+                    {%endif%}
+                    <div class="bolds">{{ blog.bolds | linebreaks }}</div>
+                    <div class="paras">{{ blog.paras | linebreaks }}</div>
+                    <div class="paras">{{ blog.paras1 | linebreaks }}</div>
+                    <div class="paras">{{ blog.paras2 | linebreaks }}</div>
+                    <div class="paras">{{ blog.paras3 | linebreaks }}</div>
+                    <div class="bolds">{{ blog.bolds2 | linebreaks }}</div>
+                    <div class="paras">{{ blog.paras4 | linebreaks }}</div>
+                    <div class="paras">{{ blog.paras5 | linebreaks }}</div>
+                    <div class="paras">{{ blog.paras6 | linebreaks }}</div>
+                    <div class="paras">{{ blog.paras7 | linebreaks }}</div>
+                    <div class="bolds">{{ blog.bolds3 | linebreaks }}</div>
+                    <div class="paras">{{ blog.paras8 | linebreaks }}</div>
+                    <div class="paras">{{ blog.paras9 | linebreaks }}</div>
+                    <div class="paras">{{ blog.paras10 | linebreaks }}</div>
+                    <div class="paras">{{ blog.paras11 | linebreaks }}</div>
+                    <div class="bolds">{{ blog.bolds4 | linebreaks }}</div>
+                    <div class="paras">{{ blog.paras12 | linebreaks }}</div>
+                    <div class="paras">{{ blog.paras13 | linebreaks }}</div>
+                    <div class="paras">{{ blog.paras14 | linebreaks }}</div>
+                    <div class="paras">{{ blog.paras15 | linebreaks }}</div>
+                    <p style="text-align: center; font-weight: bolder;"><b>{{ blog.outro }}</b></p>
+        
+                </div><br/>
+            </div>
+            <div class="col-md-3">
+                
+                <!-- <div class="comments">
+                    <div style="text-align: center;"><b>Comments</b></div>
+                    <p>
+                        {% for comment in comments %}
+                        <div>
+                            <b>{{comment.name}}</b>
+                        </div>
+                        <div>
+                            {{comment.comment}}
+                        </div>
+                        {% endfor %}
+                    </p>
+                </div> -->
+                <div class="message" style="background-color: aquamarine; margin-top:80px; padding: 12px;">
+                    Directly message me through: 
+                    <li><a href="https://www.facebook.com/michealstarofficial">FaceBook</a></li> or 
+                    <li><a href="https://www.instagram.com/michealstarx">InstaGram</a></li> or 
+                    <li><a href="https://wa.me/260761781385">WhatsApp</a></li>
+                </div><br/>
+            </div>
+        </div>
+        <!-- <div class="container">
+            <h3>Commenting</h3>
+            <form action="{% url 'blog_details' id=blog.id %}" method="POST">
+                {% csrf_token %}
+                {{ commentForm.as_p | linebreaks }}
+                <br/><button>Post</button>
+            </form>
+        </div><br/> -->
+        
+        
     </div>
     <footer>
         <a href="{% url 'home_page' %}" style="text-decoration: none;"><nav-btn>HOME</nav-btn></a>
