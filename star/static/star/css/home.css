@@ -6,7 +6,7 @@
 
 body{
     width: 100%;
-    
+    background-color: black;
 }
 
 header{
@@ -55,7 +55,7 @@ h1{
 
 .introduction{
     background-color: aqua;
-    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../images/bgi.jpg);
+    background-image: linear-gradient(rgba(36, 33, 33, 0.8), rgba(11, 11, 11, 0.8)), url(../images/bgi.jpg);
     background-position: top;
     background-size: cover;
     /* background-size:contain; */
@@ -72,7 +72,7 @@ h1{
 
 .details{
     background-color: aquamarine;
-    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../images/bgi1.jpg);
+    background-image: linear-gradient(rgba(57, 57, 57, 0.8), rgba(0,0,0,0.8)), url(../images/bgi1.jpg);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
