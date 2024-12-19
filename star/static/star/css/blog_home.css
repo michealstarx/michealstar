@@ -83,6 +83,7 @@ footer nav-btn {
     border: 1px solid white;
     text-decoration: none;
     background-color: rgb(23, 33, 28);
+    font-family: "Rubik Glitch Pop", system-ui;
     color: rgb(0, 119, 255);
     font-size: 18px;
 }
